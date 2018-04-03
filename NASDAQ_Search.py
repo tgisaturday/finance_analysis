@@ -26,7 +26,7 @@ def symbol_search(name,company_dict,fullname_list):
 
     fullname = ''
     for full in fullname_list:
-        if name in full:
+        if name.lower() in full:
             fullname = full
             break
     if fullname == '':
